@@ -7,9 +7,10 @@ mysql=MySQL()
 
 #Mysql configurations
 app.config['MYSQL_DATABASE_USER']='root'
-app.config['MYSQL_DATABASE_PASSWORD']='password'
-app.config['MYSQL_DATABASE_DB']='test'
+app.config['MYSQL_DATABASE_PASSWORD']='admin'
+app.config['MYSQL_DATABASE_DB']='yuanshop'
 app.config['MYSQL_DATABASE_HOST']='localhost'
+app.config['MYSQL_DATABASE_PORT']=3307
 mysql.init_app(app)
 
 @app.route('/')
