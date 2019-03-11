@@ -7,24 +7,21 @@ mysql=MySQL()
 
 #Mysql configurations
 app.config['MYSQL_DATABASE_USER']='root'
-app.config['MYSQL_DATABASE_PASSWORD']='admin'
+app.config['MYSQL_DATABASE_PASSWORD']='password'
 app.config['MYSQL_DATABASE_DB']='test'
 app.config['MYSQL_DATABASE_HOST']='localhost'
-app.config['MYSQL_DATABASE_PORT']=3307
 mysql.init_app(app)
 
 @app.route('/')
 def hello_world():
-   return 'Hello World!'
+    return 'Hello World!'
 
 @app.route('/user/<name>')
 def user_route(name):
     conn = mysql.connect()
     cursor = conn.cursor()
-    cursor.execute("SELECT * from UserName")
+    cursor.execute("SELECT * from User")
     data=cursor.fetchone()
-    print (data)
-    #return "data"
     return render_template('index.html',name=name);
 
 if __name__ == '__main__':
