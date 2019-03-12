@@ -28,6 +28,7 @@
 
     <!-- Modernizr JS -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="js/register.js"></script>
 </head>
 
 <body>
@@ -277,19 +278,20 @@
                                 </form>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6" id="registerdiv">
                             <div class="registered-customers">
                                 <div class="section-title text-uppercase mb-40">
                                     <h4>NEW CUSTOMERS</h4>
                                 </div>
                                 <form action="#">
-                                    <div class="login-account p-30 box-shadow">
+                                    <div class="login-account p-30 box-shadow" >
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <input type="text" placeholder="userName">
+                                                <input type="text" id="username" placeholder="userName">
                                             </div>
                                             <div class="col-sm-6">
-                                                <input type="text" placeholder="age">
+                                                <!--<input type="text" placeholder="age">-->
+                                                <input type="date" placeholder="date of birth" value="date of birth" id="birthday"/>
                                             </div>
                                             <!--<div class="col-sm-6">
                                                 <select class="custom-select">
@@ -346,6 +348,7 @@
                                                 <button type="reset" class="submit-btn mt-20">Clear</button>
                                             </div>
                                         </div>
+                                    </div>
                                     </div>
                                 </form>
                             </div>
