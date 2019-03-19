@@ -1,43 +1,51 @@
-let rooturl="";
+/*$(document).on("click",'#btnregister',function () {
+    confirmpwd();
+    register();
+});*/
 
-let formToJSON=function(){
+
+var formToJSON=function(){
     return JSON.stringify({
-            "username":$('username').val(),
-            "birthday":$('birthday').val(),
-            "gender":$('gender').val(),
-            "userpassword":$('password').val(),
-            "permission":"user",
-            "statustype":"available"
+            "username":$('#username').val(),
+            "birthday":$('#birthday').val(),
+            "gender":$('#gender').val(),
+            "userpassword":$('#pwd').val(),
+            "permission":$('#permission').val(),
+            "statustype":$('#statustype').val()
 
     });
 };
 
-let confirmpwd=function(){
-        let pwd=$('pwd').val();
-        let conpwd=$('conpwd').val();
-        if(pwd !== conpwd)
-            alert("two time tep password is not same!")
+var confirmpwd = function(){
+        var pwd=$('#pwd').val();
+        var conpwd=$('#conpwd').val();
+        if(pwd != conpwd)
+            alert("Inconsistent password entered twice!")
             return false;
+};
 
-}
-
-let register=function(){
+var register = function(){
         console.log("start to register user");
         $.ajax({
             type:'POST',
             contentType:'application/json',
-            url:rooturl,
+            url:"{{ register}}",
             dataType:"json",
             data:formToJSON(),
             success:function(data,textStatus,jqXHR){
                 alert("register successfully");
-                $('registerdiv').hidden;
+                $('#registerdiv').hidden;
 
+            },
+            error:function (jqXHR,textStatus,errorThrown) {
+                alert("register error:"+textStatus);
             }
-        });
-}
 
-$(document).on("click",'btnregister',function () {
+        });
+};
+
+
+$(document).on("click",'#btnregister',function () {
     confirmpwd();
     register();
-})
+});
