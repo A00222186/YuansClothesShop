@@ -30,6 +30,7 @@ var register = function(){
         $.ajax({
             type:'POST',
             contentType:'application/json',
+
             url:"{{ register}}",
             dataType:"json",
             data:formToJSON(),
