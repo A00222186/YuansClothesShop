@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect,url_for
+from flask import Flask,render_template,request,redirect,url_for,json
 from flaskext.mysql import MySQL
 
 
@@ -37,6 +37,10 @@ def login():
     return render_template('login.html', error=error)
 
 
-
+@app.route('/register', methods=['POST'])
+def api_register():
+    if request.method=='POST':
+        rev=request.get_json()['birthday']
+        print(rev)
 if __name__ == '__main__':
     app.run()

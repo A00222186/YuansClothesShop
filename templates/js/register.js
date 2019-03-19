@@ -18,10 +18,16 @@ var formToJSON=function(){
 var confirmpwd = function(){
         var pwd=$('#pwd').val();
         var conpwd=$('#conpwd').val();
+        var username=$('#username').val();
+
         if(pwd != conpwd) {
             alert("Inconsistent password entered twice!");
             event.preventDefault();
         }
+/*        if(username==""){
+            var userspan=$('#userspan').val();
+            userspan="user name can not be null!"
+        }*/
         return true;
 };
 
@@ -48,5 +54,5 @@ var register = function(){
 
 $(document).on("click",'#btnregister',function () {
     confirmpwd();
-    register();
+    /*register();*/
 });
