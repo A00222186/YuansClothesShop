@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c99245-b55b-41cd-8352-80258e2aa900" name="Default Changelist" comment=" for web page template">
-      <change beforePath="$PROJECT_DIR$/../YuansClothesShop/.idea/YuansClothesShop111.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YuansClothesShop/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../YuansClothesShop/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="97c99245-b55b-41cd-8352-80258e2aa900" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../YuansClothesShop/.idea/YuansClothesShop.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../YuansClothesShop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../YuansClothesShop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../YuansClothesShop/moban3369.zip" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../YuansClothesShop/templates/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../YuansClothesShop/templates/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../YuansClothesShop/templates/js/register.js" beforeDir="false" afterPath="$PROJECT_DIR$/../YuansClothesShop/templates/js/register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../YuansClothesShop/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../YuansClothesShop/templates/login.html" afterDir="false" />
@@ -24,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
+            <state relative-caret-position="78">
+              <caret line="292" column="35" selection-start-line="292" selection-start-column="35" selection-end-line="292" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -33,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/js/register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+            <state relative-caret-position="432">
+              <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -58,6 +56,8 @@
       <find>$</find>
       <find>gender</find>
       <find>ema</find>
+      <find>persission</find>
+      <find>permission</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -83,6 +83,9 @@
         <option value="$PROJECT_DIR$/templates/js/main.js" />
         <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/js/register.js" />
+        <option value="$PROJECT_DIR$/../YuansClothesShop/templates/js/main.js" />
+        <option value="$PROJECT_DIR$/../YuansClothesShop/templates/login.html" />
+        <option value="$PROJECT_DIR$/../YuansClothesShop/templates/js/register.js" />
       </list>
     </option>
   </component>
@@ -109,6 +112,12 @@
               <item name="YuansClothesShop111" type="b2602c69:ProjectViewProjectNode" />
               <item name="YuansClothesShop" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="YuansClothesShop111" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YuansClothesShop" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -143,7 +152,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="JavaScript Debug.login.html (1)">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="YuansClothesShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -171,6 +180,9 @@
       <method v="2" />
     </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/YuansClothesShop/templates/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/YuansClothesShop111/templates/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/YuansClothesShop/templates/login.html" useBuiltInWebServerPort="true">
@@ -216,28 +228,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="YuansClothesShop" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -354,11 +344,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.login.html (1)" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.about.html" />
-        <item itemvalue="Python.app" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +372,7 @@
       <workItem from="1552919549552" duration="843000" />
       <workItem from="1552922684177" duration="568000" />
       <workItem from="1552923310374" duration="729000" />
-      <workItem from="1552997558921" duration="1086000" />
+      <workItem from="1552997558921" duration="2480000" />
     </task>
     <task id="LOCAL-00001" summary=" for web page template">
       <created>1552320946431</created>
@@ -405,16 +395,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552396712500</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="register js and web page change">
+      <created>1552998758214</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1552998758214</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26604000" />
+    <option name="totallyTimeSpent" value="27998000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -425,9 +423,9 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49946696" weight="0.32952183" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" weight="0.32952183" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" visible="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.32952183" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -439,6 +437,32 @@
       <window_info anchor="right" id="R Graphics" order="6" />
       <window_info anchor="right" id="R Packages" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1444563" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32848233" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.4989339" weight="0.32952183" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5010661" side_tool="true" weight="0.32952183" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="GeekHub" order="3" side_tool="true" />
+      <window_info anchor="right" id="SciView" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="R Graphics" order="6" />
+      <window_info anchor="right" id="R Packages" order="7" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -498,7 +522,8 @@
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value=" for web page template" />
-    <option name="LAST_COMMIT_MESSAGE" value=" for web page template" />
+    <MESSAGE value="register js and web page change" />
+    <option name="LAST_COMMIT_MESSAGE" value="register js and web page change" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/../YuanClothShop/venv/Lib/site-packages/pymysql/connections.py">
@@ -547,16 +572,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1557">
-          <caret line="246" column="14" lean-forward="true" selection-start-line="246" selection-start-column="14" selection-end-line="246" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../YuansClothesShop/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
@@ -574,17 +589,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="226" column="17" selection-start-line="226" selection-start-column="17" selection-end-line="226" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="224" column="49" selection-start-line="224" selection-start-column="49" selection-end-line="224" selection-end-column="49" />
+        <state relative-caret-position="78">
+          <caret line="292" column="35" selection-start-line="292" selection-start-column="35" selection-end-line="292" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/js/register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
+        <state relative-caret-position="432">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>

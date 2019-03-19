@@ -223,7 +223,7 @@ var formToJSON=function(){
     });
 };
 
-var confirmpwd=function(){
+var confirmpwd = function(){
         var pwd=$('#pwd').val();
         var conpwd=$('#conpwd').val();
         if(pwd !== conpwd)
@@ -232,7 +232,7 @@ var confirmpwd=function(){
 
 };
 
-var register=function(){
+var register = function(){
         console.log("start to register user");
         $.ajax({
             type:'POST',

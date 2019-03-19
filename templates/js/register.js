@@ -12,16 +12,17 @@ var formToJSON=function(){
             "userpassword":$('#pwd').val(),
             "permission":$('#permission').val(),
             "statustype":$('#statustype').val()
-
     });
 };
 
 var confirmpwd = function(){
         var pwd=$('#pwd').val();
         var conpwd=$('#conpwd').val();
-        if(pwd != conpwd)
-            alert("Inconsistent password entered twice!")
-            return false;
+        if(pwd != conpwd) {
+            alert("Inconsistent password entered twice!");
+            event.preventDefault();
+        }
+        return true;
 };
 
 var register = function(){
