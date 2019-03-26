@@ -1,41 +1,78 @@
-from flask import Flask,render_template,request,redirect,url_for
+from flask import Flask,render_template,request
 from flaskext.mysql import MySQL
 
-
 app = Flask(__name__)
-mysql=MySQL()
+mysql = MySQL()
 
 #Mysql configurations
 app.config['MYSQL_DATABASE_USER']='root'
 app.config['MYSQL_DATABASE_PASSWORD']='admin'
 app.config['MYSQL_DATABASE_DB']='yuanshop'
 app.config['MYSQL_DATABASE_HOST']='localhost'
-app.config['MYSQL_DATABASE_PORT']=3307
+app.config['MYSQL_DATABASE_CHARSET']='utf8'
+app.config['MYSQL_USE_UNICODE']= True
 mysql.init_app(app)
+conn = mysql.connect()
+cursor = conn.cursor()
+
+def findID(id):
+    id = request.values.get(id)
+    return id
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
+def index():
 
-@app.route('/user/<name>')
-def user_route(name):
+    return render_template('index.html')
+
+@app.route('/product/<id>')
+def getPro(id):
+    ID = findID(id)
+    cursor.execute('''SELECT * from Product where productid like %s''' % id)
+    productid = cursor.fetchone()
+
+    print productid[0]
+    print productid[1]
+    print productid[2]
+    print productid[3]
+    print productid[4]
+    print productid[5]
+    print productid[6]
+    print productid[7]
+
+    return render_template('product-details.html', ID=ID, productid=productid)
+
+@app.route('/registuser')
+def register():
+    return render_template('login.html')
+def Response_headers(content):
+    resp = Response(content)
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
+
+@app.route('/register')
+def getRigistRequest():
     conn = mysql.connect()
     cursor = conn.cursor()
-    cursor.execute("SELECT * from User")
-    data=cursor.fetchone()
-    return render_template('index.html',name=name)
 
+    sql = "INSERT INTO usertable(username, userpassword,age,gender) VALUES (\'" + request.args.get('username') + "\',\'" + request.args.get('userpassword') + "\', \'" + request.args.get(
+        'age') + "\',\'" + request.args.get('gender') + "\')"
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    error = None
-    if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'secret':
-            error = 'Invalid Username/Password.'
-        else:
-            return redirect(url_for('home'))
-    return render_template('login.html', error=error)
+    print (sql)
 
+    try:
+
+        cursor.execute(sql)
+
+        conn.commit()
+        conn.close()
+        return render_template('login.html')
+    except:
+
+        traceback.print_exc()
+
+        conn.rollback()
+        return 'failed'
+        conn.close()
 
 
 if __name__ == '__main__':
