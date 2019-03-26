@@ -1,30 +1,45 @@
-from flask import Flask,render_template,request,redirect,url_for
+from flask import Flask,render_template,request
 from flaskext.mysql import MySQL
-import traceback
-
 
 app = Flask(__name__)
-mysql=MySQL()
+mysql = MySQL()
 
 #Mysql configurations
 app.config['MYSQL_DATABASE_USER']='root'
 app.config['MYSQL_DATABASE_PASSWORD']='admin'
 app.config['MYSQL_DATABASE_DB']='yuanshop'
 app.config['MYSQL_DATABASE_HOST']='localhost'
-app.config['MYSQL_DATABASE_PORT']=3306
+app.config['MYSQL_DATABASE_CHARSET']='utf8'
+app.config['MYSQL_USE_UNICODE']= True
 mysql.init_app(app)
+conn = mysql.connect()
+cursor = conn.cursor()
+
+def findID(id):
+    id = request.values.get(id)
+    return id
 
 @app.route('/')
-def hello_world():
-    return 'Hello World!'
+def index():
 
-@app.route('/user/<name>')
-def user_route(name):
-    conn = mysql.connect()
-    cursor = conn.cursor()
-    cursor.execute("SELECT * from User")
-    data=cursor.fetchone()
-    return render_template('index.html',name=name)
+    return render_template('index.html')
+
+@app.route('/product/<id>')
+def getPro(id):
+    ID = findID(id)
+    cursor.execute('''SELECT * from Product where productid like %s''' % id)
+    productid = cursor.fetchone()
+
+    print productid[0]
+    print productid[1]
+    print productid[2]
+    print productid[3]
+    print productid[4]
+    print productid[5]
+    print productid[6]
+    print productid[7]
+
+    return render_template('product-details.html', ID=ID, productid=productid)
 
 @app.route('/registuser')
 def register():
@@ -39,8 +54,8 @@ def getRigistRequest():
     conn = mysql.connect()
     cursor = conn.cursor()
 
-    sql = "INSERT INTO usertable(username, userpassword,birthday,gender) VALUES (\'" + request.args.get('username') + "\',\'" + request.args.get('userpassword') + "\', \'" + request.args.get(
-        'birthday') + "\',\'" + request.args.get('gender') + "\')"
+    sql = "INSERT INTO usertable(username, userpassword,age,gender) VALUES (\'" + request.args.get('username') + "\',\'" + request.args.get('userpassword') + "\', \'" + request.args.get(
+        'age') + "\',\'" + request.args.get('gender') + "\')"
 
     print (sql)
 
@@ -58,6 +73,7 @@ def getRigistRequest():
         conn.rollback()
         return 'failed'
         conn.close()
+
 
 if __name__ == '__main__':
     app.run()
