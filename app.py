@@ -1,5 +1,6 @@
 from flask import Flask,render_template,request,redirect,url_for
 from flaskext.mysql import MySQL
+import traceback
 
 
 app = Flask(__name__)
@@ -10,7 +11,7 @@ app.config['MYSQL_DATABASE_USER']='root'
 app.config['MYSQL_DATABASE_PASSWORD']='admin'
 app.config['MYSQL_DATABASE_DB']='yuanshop'
 app.config['MYSQL_DATABASE_HOST']='localhost'
-app.config['MYSQL_DATABASE_PORT']=3307
+app.config['MYSQL_DATABASE_PORT']=3306
 mysql.init_app(app)
 
 @app.route('/')
@@ -25,18 +26,38 @@ def user_route(name):
     data=cursor.fetchone()
     return render_template('index.html',name=name)
 
+@app.route('/registuser')
+def register():
+    return render_template('login.html')
+def Response_headers(content):
+    resp = Response(content)
+    resp.headers['Access-Control-Allow-Origin'] = '*'
+    return resp
 
-@app.route('/login', methods=['GET', 'POST'])
-def login():
-    error = None
-    if request.method == 'POST':
-        if request.form['username'] != 'admin' or request.form['password'] != 'secret':
-            error = 'Invalid Username/Password.'
-        else:
-            return redirect(url_for('home'))
-    return render_template('login.html', error=error)
+@app.route('/register')
+def getRigistRequest():
+    conn = mysql.connect()
+    cursor = conn.cursor()
 
+    sql = "INSERT INTO usertable(username, userpassword,birthday,gender) VALUES (\'" + request.args.get('username') + "\',\'" + request.args.get('userpassword') + "\', \'" + request.args.get(
+        'birthday') + "\',\'" + request.args.get('gender') + "\')"
 
+    print (sql)
+
+    try:
+
+        cursor.execute(sql)
+
+        conn.commit()
+        conn.close()
+        return render_template('login.html')
+    except:
+
+        traceback.print_exc()
+
+        conn.rollback()
+        return 'failed'
+        conn.close()
 
 if __name__ == '__main__':
     app.run()
