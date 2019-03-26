@@ -339,7 +339,7 @@
 /*  7.3 Support Area CSS
 /*----------------------------------------*/
 .service-area {
-  background: rgba(0, 0, 0, 0) url("../static/images/support.jpg") no-repeat fixed center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../images/support.jpg") no-repeat fixed center center / cover ;
 }
 .service-area .single-item i {
   border: 1px solid #01a6a9;
@@ -469,7 +469,7 @@
 /*  7.4 Testimonial Area CSS
 /*----------------------------------------*/
 .testimonial-area #particles-js {
-  background: rgba(0, 0, 0, 0) url("../static/images/testimonial/bg.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../images/testimonial/bg.jpg") no-repeat scroll center center / cover ;
   position: relative;
   width: 100%;
 }
@@ -648,7 +648,7 @@
 /*  8. Breadcrumbs Area CSS
 /*----------------------------------------*/
 .breadcrumbs-area {
-  background: rgba(0, 0, 0, 0) url("../static/images/breadcrumb.jpg") no-repeat scroll center center;
+  background: rgba(0, 0, 0, 0) url("../images/breadcrumb.jpg") no-repeat scroll center center;
 }
 .breadcrumbs h3 {
   font-weight: 600;
@@ -873,13 +873,14 @@
   width: 21px;
   display: block;
 }
-.color-1 a{background: #FFA07A;}
-.color-2 a{background: #00EEEE;}
-.color-3 a{background: #FF7F24;}
-.color-4 a{background: #FE5858;}
+.color-1 a{background: #000000;}
+.color-2 a{background: #FFFFFF;}
+.color-3 a{background: #ff0000;}
+.color-4 a{background: #3b579d;}
 .color-5 a{background: #E9967A;}
-.color-6 a{background: #E9967A;}
+.color-6 a{background: #fad42e;}
 .color-7 a{background: #FFA07A;}
+
 /*----------------------------------------*/
 /*  10. Product Details Page CSS
 /*----------------------------------------*/

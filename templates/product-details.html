@@ -263,70 +263,85 @@
                         <div class="col-sm-7">
                             <div class="product-details-content">
                                 <div class="product-content text-uppercase">
-                                    <a title="Slim Shirt With Stretch" href="product-details.html">{{name}}</a>
-                                    <div class="rating-icon pb-30 mt-10">
-                                        <i class="zmdi zmdi-star"></i>
-                                        <i class="zmdi zmdi-star"></i>
-                                        <i class="zmdi zmdi-star"></i>
-                                        <i class="zmdi zmdi-star-half"></i>
-                                        <i class="zmdi zmdi-star-half"></i>
-                                    </div>
+                                    <a title="Slim Shirt With Stretch" href="product-details.html">{{productid[1]}}</a>
+                                    <!--<div class="rating-icon pb-30 mt-10">-->
+                                        <!--<i class="zmdi zmdi-star"></i>-->
+                                        <!--<i class="zmdi zmdi-star"></i>-->
+                                        <!--<i class="zmdi zmdi-star"></i>-->
+                                        <!--<i class="zmdi zmdi-star-half"></i>-->
+                                        <!--<i class="zmdi zmdi-star-half"></i>-->
+                                    <!--</div>-->
 
 
 
                                     <div class="product-price pb-30">
-                                        <span class="new-price">{{price}}</span>
+                                        <span class="new-price">£ {{productid[5]}}</span>
                                         <span class="old-price">£ 200.00</span>
                                     </div>
                                 </div>
                                 <div class="product-view pb-30">
                                     <h4 class="product-details-tilte text-uppercase">overview</h4>
-                                    <p>{{overview}}</p>
+                                    <p>{{productid[3]}}</p>
                                 </div>
                                 <div class="product-size text-uppercase pb-40">
                                     <h4 class="product-details-tilte text-uppercase pb-10">size</h4>
                                     <ul>
-                                        <!--<li><a href="#">s</a></li>-->
-                                        <!--<li><a href="#">m</a></li>-->
-                                        <li><a href="#">l</a></li>
-                                        <!--<li><a href="#">xl</a></li>-->
-                                        <!--<li><a href="#">xxl</a></li>-->
+                                        {% if productid[4]== 'S' %}
+                                        <li><a href="#">S</a></li>
+                                        {% elif productid[4]== 'M' %}
+                                        <li><a href="#">M</a></li>
+                                         {% elif productid[4]== 'L' %}
+                                        <li><a href="#">L</a></li>
+                                        {% elif productid[4]== 'XL' %}
+                                        <li><a href="#">XL</a></li>
+                                        {% else %}
+                                        <li><a href="#">XXL</a></li>
+                                        {% endif%}
                                     </ul>
                                 </div>
                                 <div class="product-attributes clearfix">
                                     <div class="product-color text-uppercase pb-40">
-                                        <h4 class="product-details-tilte text-uppercase pb-10">{{color}}</h4>
-                                        <!--<ul>-->
-                                            <!--<li class="color-1"><a href="#"></a></li>-->
-                                            <!--<li class="color-2"><a href="#"></a></li>-->
-                                            <!--<li class="color-3"><a href="#"></a></li>-->
-                                            <!--<li class="color-4"><a href="#"></a></li>-->
-                                        <!--</ul>-->
+                                        <h4 class="product-details-tilte text-uppercase pb-10">{{productid[2]}}</h4>
+                                        <ul>
+                                            {% if productid[2] =='black' %}
+                                            <li class="color-1" ><a href="#"></a></li>
+                                            {% elif productid[2] =='white' %}
+                                            <li class="color-2"><a href="#"></a></li>
+                                             {% elif productid[2] =='red' %}
+                                            <li class="color-3"><a href="#"></a></li>
+                                             {% elif productid[2] =='blue' %}
+                                            <li class="color-4"><a href="#"></a></li>
+                                             {% elif productid[2] =='orange' %}
+                                             <li class="color-5"><a href="#"></a></li>
+                                             {% else %}
+                                            <li class="color-6"><a href="#"></a></li>
+                                            {% endif %}
+                                    </ul>
                                     </div>
                                     <div id="quantity-wanted" class="pull-left">
-                                        <h4 class="product-details-tilte text-uppercase pb-10">{{stock}}</h4>
+                                        <h4 class="product-details-tilte text-uppercase pb-10">stock: {{productid[6]}}</h4>
                                         <input type="number" class="cart-plus-minus-box" value="1">
                                     </div>
                                 </div>
-                                <div class="product-action-shop text-center mb-40">
-                                    <a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">
-                                        <i class="zmdi zmdi-eye"></i>
-                                    </a>
-                                    <a title="Add to cart" href="#">
-                                        <i class="zmdi zmdi-shopping-cart"></i>
-                                    </a>
-                                    <a title="Add to Wishlist" href="#">
-                                        <i class="zmdi zmdi-favorite"></i>
-                                    </a>
-                                </div>
-                                <div class="socialsharing-product">
-                                    <h4 class="product-details-tilte text-uppercase pb-10">share this on</h4>
-                                    <button type="button"><i class="zmdi zmdi-facebook"></i></button>
-                                    <button type="button"><i class="zmdi zmdi-instagram"></i></button>
-                                    <button type="button"><i class="zmdi zmdi-rss"></i></button>
-                                    <button type="button"><i class="zmdi zmdi-twitter"></i></button>
-                                    <button type="button"><i class="zmdi zmdi-pinterest"></i></button>
-                                </div>
+                                <!--<div class="product-action-shop text-center mb-40">-->
+                                    <!--<a href="#" title="Quick view" data-toggle="modal" data-target="#productModal">-->
+                                        <!--<i class="zmdi zmdi-eye"></i>-->
+                                    <!--</a>-->
+                                    <!--<a title="Add to cart" href="#">-->
+                                        <!--<i class="zmdi zmdi-shopping-cart"></i>-->
+                                    <!--</a>-->
+                                    <!--<a title="Add to Wishlist" href="#">-->
+                                        <!--<i class="zmdi zmdi-favorite"></i>-->
+                                    <!--</a>-->
+                                <!--</div>-->
+                                <!--<div class="socialsharing-product">-->
+                                    <!--<h4 class="product-details-tilte text-uppercase pb-10">share this on</h4>-->
+                                    <!--<button type="button"><i class="zmdi zmdi-facebook"></i></button>-->
+                                    <!--<button type="button"><i class="zmdi zmdi-instagram"></i></button>-->
+                                    <!--<button type="button"><i class="zmdi zmdi-rss"></i></button>-->
+                                    <!--<button type="button"><i class="zmdi zmdi-twitter"></i></button>-->
+                                    <!--<button type="button"><i class="zmdi zmdi-pinterest"></i></button>-->
+                                <!--</div>-->
                             </div>
                         </div>
                     </div>
@@ -343,7 +358,7 @@
                                 <div class="clearfix"></div>
                                 <div class="tab-content review">
                                     <div role="tabpanel" class="tab-pane active" id="description">
-                                        <p>{{description}}</p>
+                                        <p>{{productid[7]}}</p>
                                     </div>
                                     <div role="tabpanel" class="tab-pane" id="reviews">
                                         <table class="table-data-sheet">
