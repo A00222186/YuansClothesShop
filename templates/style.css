@@ -339,7 +339,7 @@
 /*  7.3 Support Area CSS
 /*----------------------------------------*/
 .service-area {
-  background: rgba(0, 0, 0, 0) url("images/support.jpg") no-repeat fixed center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../static/images/support.jpg") no-repeat fixed center center / cover ;
 }
 .service-area .single-item i {
   border: 1px solid #01a6a9;
@@ -469,7 +469,7 @@
 /*  7.4 Testimonial Area CSS
 /*----------------------------------------*/
 .testimonial-area #particles-js {
-  background: rgba(0, 0, 0, 0) url("images/testimonial/bg.jpg") no-repeat scroll center center / cover ;
+  background: rgba(0, 0, 0, 0) url("../static/images/testimonial/bg.jpg") no-repeat scroll center center / cover ;
   position: relative;
   width: 100%;
 }
@@ -648,7 +648,7 @@
 /*  8. Breadcrumbs Area CSS
 /*----------------------------------------*/
 .breadcrumbs-area {
-  background: rgba(0, 0, 0, 0) url("images/breadcrumb.jpg") no-repeat scroll center center;
+  background: rgba(0, 0, 0, 0) url("../static/images/breadcrumb.jpg") no-repeat scroll center center;
 }
 .breadcrumbs h3 {
   font-weight: 600;
