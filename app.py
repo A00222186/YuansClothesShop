@@ -1,4 +1,5 @@
 from flask import Flask,render_template,request
+import traceback
 from flaskext.mysql import MySQL
 
 app = Flask(__name__)
@@ -30,14 +31,14 @@ def getPro(id):
     cursor.execute('''SELECT * from Product where productid like %s''' % id)
     productid = cursor.fetchone()
 
-    print productid[0]
-    print productid[1]
-    print productid[2]
-    print productid[3]
-    print productid[4]
-    print productid[5]
-    print productid[6]
-    print productid[7]
+    print (productid[0])
+    print (productid[1])
+    print (productid[2])
+    print (productid[3])
+    print (productid[4])
+    print (productid[5])
+    print (productid[6])
+    print (productid[7])
 
     return render_template('product-details.html', ID=ID, productid=productid)
 
@@ -51,11 +52,12 @@ def Response_headers(content):
 
 @app.route('/register')
 def getRigistRequest():
+    print("Establishing Connection")
     conn = mysql.connect()
     cursor = conn.cursor()
 
-    sql = "INSERT INTO usertable(username, userpassword,age,gender) VALUES (\'" + request.args.get('username') + "\',\'" + request.args.get('userpassword') + "\', \'" + request.args.get(
-        'age') + "\',\'" + request.args.get('gender') + "\')"
+    sql = "INSERT INTO usertable(username, userpassword,birthday,gender) VALUES (\'" + request.args.get('username') + "\',\'" + request.args.get('userpassword') + "\', \'" + request.args.get(
+        'birthday') + "\',\'" + request.args.get('gender') + "\')"
 
     print (sql)
 
