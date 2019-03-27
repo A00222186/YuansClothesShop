@@ -30,17 +30,27 @@ def getPro(id):
     ID = findID(id)
     cursor.execute('''SELECT * from Product where productid like %s''' % id)
     productid = cursor.fetchone()
+    id=productid[0]
+    name=productid[1]
+    color=productid[2]
+    overview=productid[3]
+    size=productid[4]
+    price=productid[5]
+    stock=productid[6]
+    description=productid[7]
 
-    print (productid[0])
-    print (productid[1])
-    print (productid[2])
-    print (productid[3])
-    print (productid[4])
-    print (productid[5])
-    print (productid[6])
-    print (productid[7])
 
-    return render_template('product-details.html', ID=ID, productid=productid)
+    print (id)
+    print (name)
+    print (color)
+    print (overview)
+    print (size)
+    print (price)
+    print (stock)
+    print (description)
+
+    return render_template('product-details.html', ID=ID, productid=productid,id=id,name=name,color=color,overview=overview,size=size,price=
+                           price,stock=stock,description=description)
 
 @app.route('/registuser')
 def register():

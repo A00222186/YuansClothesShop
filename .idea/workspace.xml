@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="97c99245-b55b-41cd-8352-80258e2aa900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/images/about/nema.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/about/shwetank.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/about/xi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/about/yuan.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/images/about/yuxin.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/YuansClothesShop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/YuansClothesShop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product-details.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,59 +17,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/YuansClothesShop$app.coverage" NAME="app Coverage Results" MODIFIED="1552998024619" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/YuansClothesShop$login.coverage" NAME="login Coverage Results" MODIFIED="1552399484577" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/YuansClothesShop$app.coverage" NAME="app Coverage Results" MODIFIED="1553721003334" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="33796">
-              <caret line="1988" column="32" selection-start-line="1988" selection-start-column="32" selection-end-line="1988" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-
-        <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/js/register.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="16" column="2" lean-forward="true" selection-start-line="16" selection-start-column="2" selection-end-line="16" selection-end-column="2" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-
         <option value="JavaScript File" />
-
+        <option value="Python Script" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>mobile</find>
-
       <find>First</find>
       <find>$</find>
       <find>gender</find>
@@ -80,43 +41,38 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../YuansClothesShop" />
-
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
-
     <option name="PUSH_TAGS">
       <GitPushTagMode>
         <option name="argument" value="--follow-tags" />
         <option name="title" value="Current Branch" />
       </GitPushTagMode>
     </option>
-
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/templates/index.html" />
-
         <option value="$PROJECT_DIR$/templates/js/plugins.js" />
-        <option value="$PROJECT_DIR$/app.py" />
         <option value="$PROJECT_DIR$/templates/js/main.js" />
-        <option value="$PROJECT_DIR$/templates/login.html" />
         <option value="$PROJECT_DIR$/templates/js/register.js" />
-
+        <option value="$PROJECT_DIR$/templates/product-details.html" />
+        <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/login.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-
-    <option name="x" value="39" />
-    <option name="y" value="21" />
-    <option name="width" value="1401" />
-    <option name="height" value="771" />
-
+  <component name="ProjectFrameBounds">
+    <option name="x" value="16" />
+    <option name="y" value="49" />
+    <option name="width" value="1440" />
+    <option name="height" value="821" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,42 +80,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="YuansClothesShop111" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YuansClothesShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="YuansClothesShop" type="462c0819:PsiDirectoryNode" />
             </path>
-
             <path>
-              <item name="YuansClothesShop111" type="b2602c69:ProjectViewProjectNode" />
+              <item name="YuansClothesShop" type="b2602c69:ProjectViewProjectNode" />
               <item name="YuansClothesShop" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
-
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../YuansClothesShop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\bozic\PycharmProjects\YuansClothesShop\templates\images\about" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/static" />
       <recent name="D:\PycharmProjects\YuansClothesShop\templates\images\logo" />
       <recent name="D:\PycharmProjects\YuansClothesShop\templates" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\bozic\PycharmProjects\YuansClothesShop\templates\images\about" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -174,8 +129,7 @@
       </list>
     </option>
   </component>
-
-  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+  <component name="RunManager" selected="Python.app">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="YuansClothesShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -202,14 +156,12 @@
     <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/YuansClothesShop111/templates/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/YuansClothesShop/templates/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="login.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/YuansClothesShop/templates/login.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-
     <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
       <module name="YuansClothesShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -258,7 +210,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-
     <configuration name="app" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="YuansClothesShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -281,7 +232,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-
+    <configuration name="YuansClothesShop" type="Python.FlaskServer" factoryName="Flask server">
+      <module name="YuansClothesShop" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="Python.FlaskServer" factoryName="Flask server">
       <module name="YuansClothesShop" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -386,21 +351,15 @@
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
-
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-
+        <item itemvalue="Python.app" />
         <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.login.html" />
         <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.about.html" />
-
-        <item itemvalue="Python.app" />
-        <item itemvalue="JavaScript Debug.login.html" />
-        <item itemvalue="Python.login" />
-        <item itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -418,7 +377,6 @@
       <workItem from="1551352083150" duration="73000" />
       <workItem from="1551789848847" duration="5558000" />
       <workItem from="1552316357464" duration="3680000" />
-
       <workItem from="1552320466210" duration="3537000" />
       <workItem from="1552392486886" duration="9599000" />
       <workItem from="1552402176980" duration="464000" />
@@ -426,7 +384,7 @@
       <workItem from="1552922684177" duration="568000" />
       <workItem from="1552923310374" duration="729000" />
       <workItem from="1552997558921" duration="1086000" />
-
+      <workItem from="1553720755178" duration="708000" />
     </task>
     <task id="LOCAL-00001" summary=" for web page template">
       <created>1552320946431</created>
@@ -453,34 +411,28 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-
-    <option name="totallyTimeSpent" value="16854000" />
+    <option name="totallyTimeSpent" value="17562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <frame x="16" y="49" width="1440" height="821" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24534413" />
-
-
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24892704" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32952183" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.80402684" visible="true" weight="0.32719547" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49946696" weight="0.32921812" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.80402684" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49878544" visible="true" weight="0.1563055" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49785408" weight="0.15500686" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50121456" side_tool="true" visible="true" weight="0.1563055" />
-
-
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50214595" side_tool="true" weight="0.15500686" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Coverage" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -552,128 +504,26 @@
     <option name="LAST_COMMIT_MESSAGE" value=" for web page template" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../YuanClothShop/venv/Lib/site-packages/pymysql/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6280">
-          <caret line="593" column="29" lean-forward="true" selection-start-line="593" selection-start-column="29" selection-end-line="593" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/my-account.html">
-
+    <entry file="file://$PROJECT_DIR$/../YuanClothShop/venv/Lib/site-packages/pymysql/connections.py" />
+    <entry file="file://$PROJECT_DIR$/templates/my-account.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="15" column="56" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/images/logo/logo-2.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/images/logo/logo-3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/images/logo/logo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6723">
-          <caret line="55" column="88" lean-forward="true" selection-start-line="55" selection-start-column="88" selection-end-line="55" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/js/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="92" column="3494" selection-start-line="92" selection-start-column="3493" selection-end-line="92" selection-end-column="3494" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/templates/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1557">
-          <caret line="246" column="14" lean-forward="true" selection-start-line="246" selection-start-column="14" selection-end-line="246" selection-end-column="14" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../YuansClothesShop/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-
-    <entry file="file://$PROJECT_DIR$/templates/images/about/ab.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js/plugins.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/js/particles.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/core.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/responsive.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="58" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/images/logo/logo-2.png" />
+    <entry file="file://$PROJECT_DIR$/templates/images/logo/logo-3.png" />
+    <entry file="file://$PROJECT_DIR$/templates/images/logo/logo.png" />
+    <entry file="file://$PROJECT_DIR$/templates/images/about/ab.jpg" />
+    <entry file="file://$PROJECT_DIR$/templates/js/main.js" />
+    <entry file="file://$PROJECT_DIR$/templates/js/bootstrap.min.js" />
+    <entry file="file://$PROJECT_DIR$/templates/js/plugins.js" />
+    <entry file="file://$PROJECT_DIR$/templates/js/particles.js" />
+    <entry file="file://$PROJECT_DIR$/templates/css/core.css" />
+    <entry file="file://$PROJECT_DIR$/templates/css/custom.css" />
+    <entry file="file://$PROJECT_DIR$/templates/css/responsive.css" />
+    <entry file="file://$PROJECT_DIR$/templates/css/bootstrap.min.css" />
     <entry file="file://$PROJECT_DIR$/templates/contact.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -690,17 +540,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-541">
-          <caret line="189" column="86" lean-forward="true" selection-start-line="189" selection-start-column="86" selection-end-line="189" selection-end-column="86" />
+        <state relative-caret-position="539">
+          <caret line="1594" column="7" selection-start-line="1594" selection-start-column="7" selection-end-line="1594" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="e#0#79#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-
-        <state relative-caret-position="5508">
-          <caret line="324" column="73" selection-start-line="324" selection-start-column="73" selection-end-line="324" selection-end-column="73" />
-
+        <state relative-caret-position="-773">
+          <caret column="47" selection-start-column="47" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/product-details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1797">
+          <caret line="753" column="7" selection-start-line="753" selection-start-column="7" selection-end-line="753" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8415">
+          <caret line="561" column="7" selection-start-line="561" selection-start-column="7" selection-end-line="561" selection-end-column="7" />
+          <folding>
+            <element signature="e#31882#31888#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
