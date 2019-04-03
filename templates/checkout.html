@@ -291,9 +291,24 @@
                             <div class="billing-title text-uppercase mb-15">
                                 <h5><strong>your order</strong></h5>
                             </div>
-                            <textarea name="OrderSummary" id="OrderSummary" placeholder="Order Summary" disabled>
-
-                            </textarea>
+                            <table>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Price</th>
+                                    <th>Colour</th>
+                                </tr>
+                                {% for item in data %}
+                                <tr>
+                                    <th>{{item[1]}}</th>
+                                    <th>{{item[2]}}</th>
+                                    <th>{{item[3]}}</th>
+                                </tr>
+                                {% endfor %}
+                                <tr>
+                                    <th>Order Total</th>
+                                    <th></th>
+                                </tr>
+                            </table>
                             <div class="billing-title text-uppercase mt-40 pb-30">
                                 <h5><strong>payment method</strong></h5>
                             </div>

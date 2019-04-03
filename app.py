@@ -1,6 +1,23 @@
 from flask import Flask,render_template,request
 import traceback
 from flaskext.mysql import MySQL
+from checkstock import send
+import json
+
+
+
+def outosend():
+    print "sending"
+    send()
+    print "send"
+#     global t    #Notice: use global variable!
+#     t = threading.Timer(10.0, outosend)
+#     t.start()
+
+# while 1:
+#     if time.localtime()[3] == 6:
+#         t.start()
+#         break
 
 app = Flask(__name__)
 mysql = MySQL()
@@ -22,8 +39,55 @@ def findID(id):
 
 @app.route('/')
 def index():
+    outosend()
+    return render_template('index.html')
+
+
+@app.route('/Websitetraffic/update', methods=['GET', 'POST'])
+def __visitorupdate__():
+    conn = mysql.connect()
+    cursor = conn.cursor()
+    print("this is main update visitor")
+    cursor.execute("call update_visitor()")
+    conn.commit()
+    conn.close()
+    print("update success")
 
     return render_template('index.html')
+
+
+@app.route('/visitor.html')
+def __getvisitor__():
+    return render_template('visitor.html')
+
+
+@app.route('/Websitetraffic/read', methods=['GET'])
+def __visitorweek__():
+    # i = datetime.datetime.now()
+    print("this is the main about read one week data")
+    conn = mysql.connect()
+    cur = conn.cursor()
+    cur.execute('call get_week()')
+    result = cur.fetchall()
+    conn.close()
+    jsonData = []
+
+    for row in result:
+        datajson = {}
+        datajson['visitor'] = row[0]
+        datajson['day'] = row[1]
+        datajson['month'] = row[2]
+        datajson['year'] = row[3]
+        jsonData.append(datajson)
+
+    return json.dumps(jsonData)
+
+@app.route('/checkout.html')
+def checkout():
+    from checkout import register
+    data = register()
+    return render_template('checkout.html', data=data)
+
 
 @app.route('/product/<id>')
 def getPro(id):
@@ -54,6 +118,8 @@ def getPro(id):
 
 @app.route('/registuser')
 def register():
+    from addcart import check
+    check()
     return render_template('login.html')
 def Response_headers(content):
     resp = Response(content)
@@ -86,6 +152,34 @@ def getRigistRequest():
         return 'failed'
         conn.close()
 
+@app.route("/cart/add", methods=['POST'])
+def add_to_cart():
+    from addcart import add_to_cart
+    add_to_cart()
+    return add_to_cart()
+
+
+@app.route('/login.html')
+def login():
+
+    from addcart import login
+    login()
+
+    return login()
+
+
+@app.route('/checkUser', methods=['POST'])
+def check():
+    from addcart import check
+    check()
+
+    return check()
+
+# @app.route('/adminindex.html')
+# def adminpage():
+#     # from addcart import check
+#     # check()
+#     return render_template('adminindex.html')
 
 if __name__ == '__main__':
     app.run()
