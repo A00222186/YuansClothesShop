@@ -282,49 +282,20 @@
                                 <div class="section-title text-uppercase mb-40">
                                     <h4>NEW CUSTOMERS</h4>
                                 </div>
-                                <form action="/checkUser" method="post">
+                                 <form method="get" action='/register'>
                                     <div class="login-account p-30 box-shadow">
                                         <div class="row">
                                             <div class="col-sm-6">
-                                                <input type="text" placeholder="Username">
+                                                <input type="text" name="username" placeholder="userName">
                                             </div>
                                             <div class="col-sm-6">
-                                                <input type="text" placeholder="Date of Birth">
+                                              <label>date of birth</label>
+                                                <input type="date" placeholder="date of birth" name="birthday" required="required"/>
                                             </div>
-                                            <!--<div class="col-sm-6">
-                                                <select class="custom-select">
-                                                    <option value="defalt">country</option>
-                                                    <option value="c-1">Australia</option>
-                                                    <option value="c-2">Bangladesh</option>
-                                                    <option value="c-3">Unitd States</option>
-                                                    <option value="c-4">Unitd Kingdom</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <select class="custom-select">
-                                                    <option value="defalt">State</option>
-                                                    <option value="c-1">Melbourne</option>
-                                                    <option value="c-2">Dhaka</option>
-                                                    <option value="c-3">New York</option>
-                                                    <option value="c-4">London</option>
-                                                </select>
-                                            </div>-->
-                                           <!-- <div class="col-sm-6">
-                                                <select class="custom-select">
-                                                    <option value="defalt">Town/City</option>
-                                                    <option value="c-1">Victoria</option>
-                                                    <option value="c-2">Chittagong</option>
-                                                    <option value="c-3">Boston</option>
-                                                    <option value="c-4">Cambridge</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-sm-6">
-                                                <input type="text" placeholder="Phone here...">
-                                            </div>
-                                        </div>-->
-                                        <input type="text" placeholder="Gender">
+                                        <input type="text" name="gender" placeholder="gender">
                                         <!--<input type="text" placeholder="Email address here...">-->
-                                        <input type="password" placeholder="Password">
+
+                                        <input type="password" name="userpassword" placeholder="Password">
                                         <input type="password" placeholder="Confirm Password">
                                         <div class="checkbox">
                                             <label class="mr-10">
@@ -347,6 +318,7 @@
                                             </div>
                                         </div>
                                     </div>
+                                </form>
                                 </form>
                             </div>
                         </div>
