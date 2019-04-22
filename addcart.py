@@ -6,7 +6,7 @@ import traceback
 def add_to_cart():
 
  from app import cursor,conn
-
+ # cursor.execute("create view yuxin_view as select productid,name,price,color from product where productid='1'")
  cursor.execute("select * from yuanshop.yuxin_view where productid=1")
  results = cursor.fetchone()
  cursor.execute("select round(sum(price), 2) as total from yuxin_view;")
@@ -51,6 +51,7 @@ def check():
     userpassword = str(request.form["password"])
 
     cursor.execute("SELECT * FROM usertable WHERE username ='"+username+"' and userpassword = '"+userpassword+"'")
+
     username= cursor.fetchone()
     id = username[0]
     name=username[1]
@@ -77,11 +78,13 @@ def check():
     elif username and permission == "admin":
 
 
-        return render_template("adminindex.html")
+        return render_template("adminpage.html")
     elif username and permission == "user":
         return render_template("index.html")
     elif username and permission == "manager":
-        return render_template("adminindex.html")
+        return render_template("adminpage.html")
+
+    cursor.execute('call add_loginvisitor(%s,%s)', (username, userpassword))
 
 
 

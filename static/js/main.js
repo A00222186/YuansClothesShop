@@ -211,7 +211,7 @@ NOTE: If you have any note put here.
             type:'POST',
             url:'/Websitetraffic/update',
             success:function(){
-                 alert("update visitor successful")
+                 // alert("update visitor successful")
             }
     });
 };

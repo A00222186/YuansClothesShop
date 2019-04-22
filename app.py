@@ -24,7 +24,7 @@ mysql = MySQL()
 
 #Mysql configurations
 app.config['MYSQL_DATABASE_USER']='root'
-app.config['MYSQL_DATABASE_PASSWORD']='admin'
+app.config['MYSQL_DATABASE_PASSWORD']='sarahaini'
 app.config['MYSQL_DATABASE_DB']='yuanshop'
 app.config['MYSQL_DATABASE_HOST']='localhost'
 app.config['MYSQL_DATABASE_CHARSET']='utf8'
@@ -59,6 +59,7 @@ def __visitorupdate__():
 @app.route('/visitor.html')
 def __getvisitor__():
     return render_template('visitor.html')
+
 
 
 @app.route('/Websitetraffic/read', methods=['GET'])
@@ -165,6 +166,7 @@ def login():
     from addcart import login
     login()
 
+
     return login()
 
 
@@ -174,6 +176,104 @@ def check():
     check()
 
     return check()
+
+@app.route('/index.html')
+def __index__():
+    return render_template('index.html')
+
+
+# @app.route('/maleLogin/read', methods=['GET'])
+# def maleLogin():
+#     from visitor import __malevisitorLogin__
+#     __malevisitorLogin__()
+#     return maleLogin()
+#
+# @app.route('/femaleLogin/read', methods=['GET'])
+# def femaleLogin():
+#     from visitor import __femalevisitorLogin__
+#     __femalevisitorLogin__()
+#     return femaleLogin()
+
+@app.route('/maleLogin/read', methods=['GET'])
+def __malevisitorLogin__():
+    print("this is the main about get male login user data")
+    conn = mysql.connect()
+    cur = conn.cursor()
+    cur.execute("select * from LoginVisDetailsMale")
+    result = cur.fetchall()
+    conn.close()
+    jsonData = []
+    count1 = 0
+    count2 = 0
+    count3 = 0
+    for row in result:
+        if row[3] < 20:
+            count1 += 1
+        if (row[3] <= 25 and row[3] >= 20):
+            count2 += 1
+        if (row[3] > 25):
+            count3 += 1
+
+    data1 = {}
+    data2 = {}
+    data3 = {}
+
+    data1['name'] = 'less20'
+    data1['num'] = count1
+    data2['name'] = 'great20less25'
+    data2['num'] = count2
+    data3['name'] = 'great25'
+    data3['num'] = count3
+    jsonData.append(data1)
+    jsonData.append(data2)
+    jsonData.append(data3)
+
+    return json.dumps(jsonData)
+
+
+@app.route('/femaleLogin/read', methods=['GET'])
+def __femalevisitorLogin__():
+    print("this is the main about get female login user data")
+    conn = mysql.connect()
+    cur = conn.cursor()
+    cur.execute("select * from LoginVisDetailsFeMale")
+    result = cur.fetchall()
+    conn.close()
+    jsonData = []
+    count1 = 0
+    count2 = 0
+    count3 = 0
+    for row in result:
+        if row[3] < 20:
+            count1 +=1
+        if (row[3]<=25 and row[3]>=20):
+            count2 += 1
+        if (row[3]>25):
+            count3 +=1
+
+    data1 = {}
+    data2 = {}
+    data3 = {}
+
+    data1['name'] = 'less20'
+    data1['num'] = count1
+    data2['name'] = 'great20less25'
+    data2['num'] = count2
+    data3['name'] = 'great25'
+    data3['num'] = count3
+    jsonData.append(data1)
+    jsonData.append(data2)
+    jsonData.append(data3)
+
+    return json.dumps(jsonData)
+
+
+@app.route('/updatestock')
+def updatestock():
+
+    cursor.execute('''Update PRODUCT set PRODUCT.stock ='100' where PRODUCT.stock < '50';''')
+    conn.commit()
+    return render_template("index.html")
 
 # @app.route('/adminindex.html')
 # def adminpage():
