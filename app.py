@@ -90,6 +90,13 @@ def checkout():
     return render_template('checkout.html', data=data)
 
 
+@app.route('/placeorder', methods=['GET', 'POST'])
+def orderplace():
+    from checkout import PlaceOrder
+    PlaceOrder()
+    return render_template('index.html')
+
+
 @app.route('/product/<id>')
 def getPro(id):
     ID = findID(id)
