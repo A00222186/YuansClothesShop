@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="97c99245-b55b-41cd-8352-80258e2aa900" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.py" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/checkout.html" afterDir="false" />
-    </list>
+    <list default="true" id="97c99245-b55b-41cd-8352-80258e2aa900" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +135,7 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="1" />
-    <option name="y" value="23" />
+    <option name="y" value="30" />
     <option name="width" value="1440" />
     <option name="height" value="821" />
   </component>
@@ -323,7 +318,7 @@
       <workItem from="1554364958024" duration="1774000" />
       <workItem from="1555622505760" duration="1489000" />
       <workItem from="1555886069599" duration="6207000" />
-      <workItem from="1556024782121" duration="2408000" />
+      <workItem from="1556024782121" duration="2426000" />
     </task>
     <task id="LOCAL-00001" summary=" for web page template">
       <created>1552320946431</created>
@@ -350,13 +345,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42586000" />
+    <option name="totallyTimeSpent" value="42604000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="821" extended-state="1" />
+    <frame x="1" y="30" width="1440" height="821" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29685265" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29685265" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -579,6 +574,11 @@
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1690" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
