@@ -21,16 +21,15 @@
 --      visitordate date  
 -- );
 
--- drop table loginvisitor;
--- create table loginvisitor(
--- id int auto_increment primary key,
---     malevistor int default 0,
---     famlevisitor int default 0,
---     days int,
---     mouths int,
---     years int,
---     visitordate date
--- );
+
+--drop table loginvisitor;
+--create table loginvisitor(
+--	id int auto_increment primary key,
+--    UserId int,
+--    visitordate date,
+--    FOREIGN KEY (UserId) REFERENCES USERTABLE(userid)
+--);
+
 
 -- SET SQL_SAFE_UPDATES = 0;
 
